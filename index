@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="Assets/css/index.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 sidebar">
+                <!-- Sidebar -->
+                <div class="d-flex flex-column justify-content-center h-100" >
+                    <a href="#" class="mt-4 menu-item active text-decoration-none"><i class="fas fa-tachometer-alt fa-lg"></i> Dashboard</a>
+                    <a href="#" class="mt-4 menu-item text-decoration-none"><i class="fas fa-sitemap fa-lg"></i> Organigramas</a>
+                    <a href="#" class="mt-4 menu-item text-decoration-none"><i class="fas fa-briefcase fa-lg"></i> Puestos</a>
+                    <a href="#" class="mt-4 menu-item text-decoration-none"><i class="fas fa-clipboard-list fa-lg"></i> Evaluación</a>
+                    <a href="#" class="mt-4 menu-item text-decoration-none"><i class="fas fa-chalkboard-teacher fa-lg mr-2"></i>Planes de información</a>
+                    <a href="#" class="mt-4 menu-item text-decoration-none"><i class="fas fa-user-graduate fa-lg"></i>Planes de carrera</a>
+                    <a href="#" class="mt-4 menu-item text-decoration-none"><i class="fas fa-check-square fa-lg"></i> Selección</a>
+                </div>
+                <div class="pb-5">
+                    <h5 class="d-block horizontal-divider w-100 h-25"><strong class="ml-3">Configuración</strong></h5>
+                    <a href="#" class="menu-item text-decoration-none mt-4"><i class="fas fa-user fa-lg"></i> Usuario</a>
+                    <a href="#" class="menu-item text-decoration-none"><i class="fas fa-sign-out-alt fa-lg"></i> Cerrar sesión</a>
+                </div>
+            </nav>
+            <main class="col-md-10">
+                <!-- Main Content -->
+                <div class="dashboard-card">
+                    <div class="dashboard-card__header d-flex justify-content-between align-items-center">
+                        <div>
+                            <h1 class="text-black-50">Dashboard</h1>
+                            <h5 class="text-black-50">Hola, Bienvenido/a!</h5>
+                        </div>
+                        <div class="dashboard-card__search input-group">
+                            <input type="text" class="form-control border-0" placeholder="Buscar...">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button">
+                                    <i class="fas fa-search fa-2x"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="card-body mt-2">
+                                <i class="fa fa-user fa-2x user-icon"></i>
+                            </div>
+                            <div class="mt-4 user-info">
+                                <div class="user-info__container">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <i class="fa fa-user fa-2x user-info__icon"></i>
+                                        </div>
+                                        <div class="col">
+                                            <div class="d-block mb-1 ml-3 user-info__name"><strong>Usuario</strong></div>
+                                            <span class="ml-3 user-info__role">Rol Usuario</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-auto">
+                    <div class="col-md-3">
+                        <div class="card bg-white border-0 shadow-sm card__onboarding">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <div class="card__onboarding-text font-weight-normal">OnBoarding</div>
+                                    <div class="card__onboarding-percentage">16 %</div>
+                                    <hr class="card__onboarding-divider">
+                                </div>
+                                <div class="card__onboarding-icon">
+                                    <i class="fas fa-folder"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-white border-0 shadow-sm card__onboarding">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <div class="card__onboarding-text font-weight-normal">Legajos Digitales</div>
+                                    <div class="card__onboarding-percentage">16 %</div>
+                                    <hr class="card__onboarding-divider card__onboarding-divider--blue">
+                                </div>
+                                <div class="card__onboarding-icon">
+                                    <i class="fas fa-folder-open"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-white border-0 shadow-sm card__onboarding">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <div class="card__onboarding-text font-weight-normal">Comunicaciones</div>
+                                    <div class="card__onboarding-percentage">18 %</div>
+                                    <hr class="card__onboarding-divider">
+                                </div>
+                                <div class="card__onboarding-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-white border-0 shadow-sm card__onboarding">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <div class="card__onboarding-text font-weight-normal">Planificacione</div>
+                                    <div class="card__onboarding-percentage">16 %</div>
+                                    <hr class="card__onboarding-divider card__onboarding-divider--blue">
+                                </div>
+                                <div class="card__onboarding-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Additional cards can be added here following the same structure -->
+                </div>
+                <div class="chart">
+                    <div class="card card__chart">
+                        <div class="card__chart-container">
+                            <div class="card__chart-header">
+                                <div class="card__chart-header--title">Reportes</div>
+                                <div class="card__chart-header--kpi">Indicadores KPI</div>
+                            </div>
+                            <canvas id="myChart" class="chart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-section">
+                            <div class="card card__round ">
+                                <div class="card-body">
+                                    <div>
+                                        <p class="form--title">Formulario</p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col ">
+                                            <ul class="list-group">
+                                                <li class="list-group__item">
+                                                    <span class="list-group__item--circle bg-blue"></span>
+                                                    <span class="text-secondary">Acuerdo de partes</span>
+                                                </li>
+                                                <li class="list-group__item">
+                                                    <span class="list-group__item--circle bg-info"></span>
+                                                    <span class="text-secondary">Cambio de domicilio</span>
+                                                </li>
+                                                <li class="list-group__item">
+                                                    <span class="list-group__item--circle bg-blue"></span>
+                                                    <span class="text-secondary">Seguro de vida</span>
+                                                </li>
+                                                <li class="list-group__item">
+                                                    <span class="list-group__item--circle bg-info"></span>
+                                                    <span class="text-secondary">Registro entrega ropa y EPP</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col vertical-divider">
+                                            <ul class="list-group">
+                                                <li class="list-group__item">
+                                                    <span class="list-group__item--circle"></span>
+                                                    <span class="text-secondary">Acuerdo de partes</span>
+                                                </li>
+                                                <li class="list-group__item">
+                                                    <span class="list-group__item--circle"></span>
+                                                    <span class="text-secondary">Cambio de domicilio</span>
+                                                </li>
+                                                <li class="list-group__item">
+                                                    <span class="list-group__item--circle"></span>
+                                                    <span class="text-secondary">Seguro de vida</span>
+                                                </li>
+                                                <li class="list-group__item">
+                                                    <span class="list-group__item--circle"></span>
+                                                    <span class="text-secondary">Registro entrega ropa y EPP</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="notification-section w-100">
+                            <div class="row h-100 w-100">
+                                <div class="col-12">
+                                    <div class="notification-card text-center">
+                                        <h5 class="notification-card__title">Control de ausentismo</h5>
+                                        <div class="notification-card__divider"></div>
+                                        <div class="row w-75 ml-3">
+                                            <div class="col">
+                                                <div class="notification-card__number">2</div>
+                                            </div>
+                                            <div class="col mt-2">
+                                                <i class="fas fa-bullhorn notification-card__icon"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="notification-card__text">Notificaciones</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="notification-section w-100">
+                            <div class="row h-100 w-100">
+                                <div class="col-12">
+                                    <div class="notification-card text-center card__round">
+                                        <h5 class="notification-card__title">Recibo de haberes</h5>
+                                        <div class="notification-card__divider"></div>
+                                        <div class="row w-75 ml-3">
+                                            <div class="col">
+                                                <div class="notification-card__number">2</div>
+                                            </div>
+                                            <div class="col mt-2">
+                                                <i class="fas fa-pencil-alt notification-card__icon"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="notification-card__text">Firmas de haberes</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+<script src="Assets/js/index.js"></script>

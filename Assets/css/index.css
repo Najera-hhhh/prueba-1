@@ -1,0 +1,354 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F4F6F9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.card__round {
+    border-radius: 30px;
+}
+
+.dashboard-card {
+    border-radius: 0.35rem;
+    padding: 1.3rem;
+}
+
+.dashboard-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.dashboard-card__search {
+    position: relative;
+    max-width: 400px;
+}
+
+.dashboard-card__search input {
+    border-radius: 20px 0 0 20px;
+    height: 60px;
+}
+
+.dashboard-card__search button {
+    border-radius: 0 20px 20px 0;
+    border: none;
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    background-color: white;
+}
+
+.dashboard-card__icons {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.dashboard-card__icon {
+    margin-left: 1rem;
+    position: relative;
+}
+
+.dashboard-card__icon--circle {
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 0.5rem;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    z-index: 0;
+}
+
+.dashboard-card__icon i {
+    z-index: 1;
+}
+
+.dashboard-card__icon-text {
+    font-size: 0.8rem;
+    color: #6c757d;
+    margin-left: 2.5rem;
+}
+
+.user-icon {
+    background-color: white; 
+    border-radius: 30px; 
+    padding-top: 10px; 
+    padding-left: 13px; 
+    width:55px; 
+    height: 55px;
+}
+
+.user-info {
+    border-radius: 30px;
+}
+
+.user-info__container {
+    width: 230px; 
+    background-color: white; 
+    border-radius: 30px; 
+    padding: 5px; 
+    padding-left: 15px;
+}
+
+.user-info__icon {
+    background-color: whitesmoke; 
+    border-radius: 30px; 
+    padding-top: 8px; 
+    padding-left: 11px; 
+    width:50px; 
+    height: 50px;
+}
+
+.user-info__name {
+    font-weight: bolder;
+}
+
+.user-info__role {
+    color: #6c757d;
+}
+
+/* Sidebar styles */
+.sidebar {
+    background-color: #232D48;
+    color: #fff;
+    min-height: 100vh;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar h2 {
+    padding: 20px;
+    border-bottom: 1px solid #4f5d73;
+    text-align: center;
+}
+
+/* Menu item styles */
+.menu-item {
+    color: #adb5bd;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+    border-left: 3px solid transparent;
+    font-size: 1.25rem;
+    border-radius: 20px;
+}
+
+.menu-item i {
+    width: 30px;
+    text-align: center;
+}
+
+.menu-item:hover,
+.menu-item.active {
+    background-color: #374059;
+    color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Dashboard header styles */
+.dashboard-header {
+    padding: 30px 50px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Search bar styles */
+.search-bar {
+    background-color: #e9ecef;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    width: 250px;
+    /* Fixed width for search bar */
+    margin-right: 10px;
+    /* Space between search bar and button */
+}
+
+/* Icon bar styles */
+.icon-bar {
+    color: #495057;
+    font-size: 1.5rem;
+    /* Larger icons */
+    display: flex;
+    /* Use flexbox for layout */
+    align-items: center;
+    /* Center items vertically */
+}
+
+.icon-bar i {
+    margin-left: 20px;
+    color: #495057;
+    /* Space between icons */
+}
+
+/* Card styles */
+.card__onboarding {
+    border-radius: 30px;
+    box-shadow: none;
+    height: 140px;
+    justify-content: center;
+    padding: 25px;
+}
+
+.card__onboarding-text,
+.card__onboarding-percentage {
+    font-size: 1.5rem;
+    color: #949494;
+    margin-left: 10px;
+}
+
+.card__onboarding-percentage {
+    font-size: 1rem;
+}
+
+.card__onboarding-divider {
+    position: absolute;
+    margin: 0.5rem 8rem 0 10px;
+    margin-left: 20%;
+    transform: translate(-55px, 27px);
+    border-top: 5px solid #98A5B9;
+    width: 17rem;
+}
+
+.card__onboarding-divider--blue {
+    border-top: 5px solid #B1D5E7;
+}
+
+.card__onboarding-icon i {
+    font-size: 68px;
+    color: #949494;
+}
+
+/*Chart style*/
+
+.card__chart {
+    margin-top: 50px;
+    height: 38vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 90px;
+    border-radius: 30px;
+}
+
+.card__chart-container {
+    width: 90%;
+    /* Updated to make the container fill the card */
+    height: 100%;
+    /* Added to make the container fill the card */
+    margin: auto;
+}
+
+.card__chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0px 0px 1rem;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.card__chart-header--title {
+    font-size: 1.5rem;
+    color: #949494;
+}
+
+.card__chart-header--kpi {
+    font-size: 1.5rem;
+    color: #949494;
+}
+
+.card {
+    box-shadow: none !important;
+    border: none;
+    background-color: #FFFFFF;
+}
+
+/*formulario*/
+
+.form-section {
+    padding: 30px;
+}
+
+.list-group__item {
+    border: none;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 3px;
+}
+
+.list-group__item--circle {
+    height: 15px;
+    width: 15px;
+    background-color: #007bff;
+    border-radius: 50%;
+    display: inline-block;
+    border: none;
+}
+
+.vertical-divider {
+    border-left: 2px solid #c2c8cf;
+    width: 10px;
+    height: 100%;
+}
+
+.horizontal-divider {
+    border-bottom: 2px solid #c2c8cf;
+    width: 10px;
+    height: 100%;
+}
+
+
+.form--title {
+    font-size: 1.3rem;
+    color: #949494;
+    border-bottom: 2px solid #989da435;
+}
+
+/*notificaciones*/
+
+.notification-card {
+    border-radius: 30px;
+    padding: 1rem;
+    background-color: #FFFFFF;
+    height: 93%;
+    margin-top: 30px;
+}
+
+.notification-card__title {
+    font-size: 1.3rem;
+    color: #6c757d;
+    margin-bottom: 0.5rem;
+}
+
+.notification-card__divider {
+    border-top: 2px solid #e9ecef;
+    width: 100%;
+    margin: 0.5rem 0;
+}
+
+.notification-card__number {
+    font-size: 4rem;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.notification-card__icon {
+    color: #007bff;
+    font-size: 3.7rem;
+    margin-top: 10px;
+}
+
+.notification-card__text {
+    font-size: 1.2rem;
+    color: #6c757d;
+    text-align: start;
+    margin-left: 20%;
+}
